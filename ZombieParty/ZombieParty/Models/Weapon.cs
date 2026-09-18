@@ -35,7 +35,7 @@ namespace ZombieParty.Models
         [Display(Name = "Qty Bought")]
         public int QtyBought { get; set; }
 
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        public virtual IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             var item = validationContext.ObjectInstance as Weapon;
             if (item == null) yield break;

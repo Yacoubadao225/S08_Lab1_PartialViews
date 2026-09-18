@@ -11,6 +11,6 @@ namespace ZombieParty.Models
         [StringLength(255)]
         public string Description { get; set; }
         [ValidateNever]
-        public List<Zombie> Zombies { get; set; }
+        public virtual List<Zombie> Zombies { get; set; }
     }
 }
